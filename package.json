@@ -6,6 +6,12 @@
   "repository": "https://github.com/Kohne0203/discord-bot-14.git",
   "author": "Ko W <lsbean62@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "debug": "ts-node ./src/index.ts",
+    "compile": "tsc -p .",
+    "compile:test": "tsc -p . --noEmit"
+  },
   "devDependencies": {
     "@types/node": "^17.0.5",
     "ts-node": "^10.4.0",
