@@ -15,7 +15,7 @@ client.on('messageCreate', (message: Message) => {
   if (message.content === "テスト") {
     message.channel.send("てすてす")
   }
-  if (message.mentions.has(client.user?.id!)) {
+  if (client.user && message.mentions.has(client.user.id)) {
     message.reply("クエッ！")
   }
 })
