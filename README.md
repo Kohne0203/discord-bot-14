@@ -1,2 +1,2 @@
-# dsiscord-bot-14
+# discord-bot-14
 discord用のBot
