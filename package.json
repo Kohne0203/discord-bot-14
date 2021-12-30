@@ -7,6 +7,7 @@
   "author": "Ko W <lsbean62@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "npm run compile && npm start",
     "start": "node ./build/index.js",
     "debug": "ts-node ./src/index.ts",
     "compile": "tsc -p .",
