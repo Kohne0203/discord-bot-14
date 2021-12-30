@@ -21,7 +21,7 @@ export const BATTLE_JOB = {
   BLUE_MAGE: '青魔導士'
 } as const
 
-export const BATTLE_JOBS  = [
+export const BATTLE_JOBS = [
   'ナイト',
   '戦士',
   '暗黒騎士',
