@@ -29,7 +29,8 @@ name: Deploy to Amazon ECS
 on:
   push:
     branches: 
-      - master                                   # containerDefinitions section of your task definition
+      - master
+    types: [closed]
 
 jobs:
   deploy:
