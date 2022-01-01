@@ -64,8 +64,7 @@ jobs:
         unzip awscliv2.zip
         sudo ./aws/install --update
         aws --version
-    
-    # AWS CLIにキーを設定
+
     - name: AWS set Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
