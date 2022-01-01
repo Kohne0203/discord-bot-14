@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot-14",
+  "version": "1.0.0",
+  "description": "discord bot for 14",
+  "main": "index.js",
+  "repository": "https://github.com/Kohne0203/discord-bot-14.git",
+  "author": "Ko W <lsbean62@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run compile && npm start",
+    "start": "node ./build/index.js",
+    "debug": "ts-node ./src/index.ts",
+    "compile": "tsc -p .",
+    "compile:test": "tsc -p . --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.5",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "discord.js": "^13.4.0",
+    "dotenv": "^10.0.0"
+  }
+}
