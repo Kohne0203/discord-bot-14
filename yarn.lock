@@ -30,6 +30,11 @@
   "resolved" "https://registry.npmjs.org/@discordjs/collection/-/collection-0.4.0.tgz"
   "version" "0.4.0"
 
+"@root/request@^1.7.0":
+  "integrity" "sha512-Ib6jLQj4P4Dnx3LMqdV+TaSDlc7tWz25wKorklQ1rMHzHfc7LKELIuWl3XDQybimOPvIvlDuVX6/Mb10dEdQYg=="
+  "resolved" "https://registry.npmjs.org/@root/request/-/request-1.8.1.tgz"
+  "version" "1.8.1"
+
 "@sapphire/async-queue@^1.1.9":
   "integrity" "sha512-CbXaGwwlEMq+l1TRu01FJCvySJ1CEFKFclHT48nIfNeZXaAAmmwwy7scUKmYHPUa3GhoMp6Qr1B3eAJux6XgOQ=="
   "resolved" "https://registry.npmjs.org/@sapphire/async-queue/-/async-queue-1.1.9.tgz"
@@ -79,6 +84,13 @@
   "version" "8.2.2"
   dependencies:
     "@types/node" "*"
+
+"@xivapi/js@^0.4.1":
+  "integrity" "sha512-m9VDuytGMMTCN5L+lg+CNRnrqUq9GZky1WjEmAK4LXj5DFWDAt+1vCdNESFWRw5pqPdyMlJPywSvMu8e8n6+Aw=="
+  "resolved" "https://registry.npmjs.org/@xivapi/js/-/js-0.4.1.tgz"
+  "version" "0.4.1"
+  dependencies:
+    "@root/request" "^1.7.0"
 
 "acorn-walk@^8.1.1":
   "integrity" "sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA=="
