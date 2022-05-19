@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: /src/index.ts
+    destination: /home/ec2-user/discord-bot-14
+hooks:
+  ApplicationStart:
+    - location: scripts/codedeploy_start.sh
+      timeout: 180
