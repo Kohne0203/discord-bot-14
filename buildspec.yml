@@ -4,6 +4,8 @@ phases:
   install:
     runtime-versions:
       nodejs: latest
+    commands:
+      - n 16.6.0
   pre_build:
     commands:
       - npm install
