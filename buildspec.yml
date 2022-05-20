@@ -1,6 +1,12 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+  prebuild:
+    commands:
+      - npm install
   build:
     commands:
       - npm run compile && npm start
