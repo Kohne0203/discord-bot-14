@@ -4,7 +4,7 @@ import i18next from 'i18next'
 import enJson from './static/locales/en.json'
 import jaJson from './static/locales/ja.json'
 
-// 多言語対応の設定
+// 多言語対応の設定(xivapiには常に英語で投げるためデフォルトはen)
 i18next.init({
   lng: 'en',
   debug: true,
