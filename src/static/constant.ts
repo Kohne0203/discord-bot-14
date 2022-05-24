@@ -43,3 +43,6 @@ export const BATTLE_JOBS = [
   '赤魔道士',
   '青魔導士'
 ]
+
+export const ITEM = 'item'
+export const LODESTONE = ' Lodestone'
