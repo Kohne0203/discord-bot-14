@@ -1,3 +1,4 @@
+require('dotenv').config()
 import { Client, Message } from 'discord.js'
 import { BATTLE_JOBS, ITEM, LODESTONE } from './static/constant'
 import i18next from 'i18next'
@@ -11,7 +12,9 @@ i18next.init({
   resources: {
     en: { translation: enJson },
     ja: { translation: jaJson }
-  }
+  },
+  keySeparator: false,
+  nsSeparator: false
 })
 
 const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES"]})
@@ -107,7 +110,7 @@ async function getAnswer (id: number) {
     if (res.GameContentLinks.GilShopItem) {
       message = res.Name_ja + '\nそのアイテムは店舗で' + res.PriceMid +　'ギルで買えるクエ！マケボ行ったらぼったくられるクエよ！！'
     } else {
-      message = res.Name_ja + '\nそのアイテムは店舗で買えないクエ…マケボ行くしかないクエね…'
+      message = res.Name_ja + '\nそのアイテムは店舗では買えないクエ…マケボ行くしかないクエね…'
     }
   }).catch(() => {
     // キーワードでうまく検索できなかった場合のエラーハンドリング
