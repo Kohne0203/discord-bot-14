@@ -131,5 +131,6 @@ async function searchGoogle(keyword: string) {
     q: keyword
   })
 
+  // 検索結果の最初の１件目だけを取りたいので配列の頭を指定
   return result.data.items[0]
 }
