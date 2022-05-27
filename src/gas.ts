@@ -1,4 +1,4 @@
-const http = require("http")
+// const http = require("http")
 const axios = require("axios")
 import { Message } from 'discord.js'
 
@@ -26,9 +26,9 @@ export const sendGAS = (message: Message) => {
   post()
 }
 
-http
-  .createServer((request: any, response: any) => {
-    console.log('Post from GAS')
-    response.send("Discord bot is active now.")
-  })
-  .litsen(3000)
+// http
+//   .createServer((request: any, response: any) => {
+//     console.log('Post from GAS')
+//     response.send("Discord bot is active now.")
+//   })
+//   .litsen(3000)
